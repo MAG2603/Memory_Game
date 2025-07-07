@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game Modern</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="carbon-bg"></div>
+    <header class="main-header">
+        <div class="glass-card header-card">
+            <h1>Memory Game Modern</h1>
+        </div>
+    </header>
+    <main class="main-grid">
+        <section class="glass-card instruksi-card">
+            <h2 class="instruksi-title">Cara Main</h2>
+            <ul class="instruksi-list">
+                <li><span class="instruksi-dot"></span>Klik dua kartu untuk membukanya.</li>
+                <li><span class="instruksi-dot"></span>Cari pasangan kartu yang sama.</li>
+                <li><span class="instruksi-dot"></span>Pasangan yang cocok akan tetap terbuka.</li>
+                <li><span class="instruksi-dot"></span>Selesaikan dengan percobaan sesedikit mungkin.</li>
+            </ul>
+        </section>
+        <section class="glass-card game-card">
+            <div class="game-header">
+                <div class="game-header-left">
+                    <button id="restart-btn"><span class="icon-refresh"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.93 4.93a8 8 0 1 1 0 11.31M4 4v5h5"/></svg></span>Restart</button>
+                </div>
+                <div class="game-header-right">
+                    <div id="score">Percobaan: <span id="attempts">0</span></div>
+                </div>
+            </div>
+            <div id="game-board"></div>
+        </section>
+    </main>
+    <!-- About Toggle Button -->
+    <button class="about-toggle" id="about-toggle" aria-label="Tentang Developer">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="8"/></svg>
+    </button>
+
+    <!-- About Modal -->
+    <div class="about-modal" id="about-modal" aria-modal="true" role="dialog" tabindex="-1">
+        <div class="about-modal-content glass-card">
+            <button class="about-close" id="about-close" aria-label="Tutup">&times;</button>
+            <img class="about-photo" src="https://api.um.ac.id/akademik/operasional/GetFoto.ptikUM?nim=230213600320&angkatan=2023" alt="Foto Mohammad Affan Ghoffar" />
+            <h3 class="about-name">Mohammad Affan Ghoffar</h3>
+            <div class="about-desc">Developer Aplikasi</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
